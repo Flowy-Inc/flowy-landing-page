@@ -2,9 +2,9 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 // Assets
-import Fonts from './assets/styles/Fonts';
-import Reset from './assets/styles/Reset';
-import Variables from './assets/styles/Variables';
+import Fonts from './assets/Fonts';
+import Reset from './assets/Reset';
+import Variables from './assets/Variables';
 
 // Pages
 import Home from './pages/Home/Home';
@@ -19,8 +19,8 @@ const App: React.FC = () => {
       <Variables />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/flowider-sign-up" element={<FlowiderSignup />} />
-        <Route path="/flowitizen-sign-up" element={<FlowitizenSignup />} />
+        <Route path="/flowider-signup" element={<FlowiderSignup />} />
+        <Route path="/flowitizen-signup" element={<FlowitizenSignup />} />
       </Routes>
     </>
   );
