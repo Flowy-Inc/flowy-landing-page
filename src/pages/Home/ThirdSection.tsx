@@ -24,7 +24,7 @@ const Section = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
 
     h1 {
         margin-top: 16px;
