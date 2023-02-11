@@ -6,7 +6,7 @@ import { IconCard } from "../../components/ui/IconCard";
 // Data
 import { IconCardDetail } from "../../data/IconCardDetail";
 
-const SecondSection: React.FC = () => {
+const AnythingAnywhereSection: React.FC = () => {
     return (
         <Section>
             <div>
@@ -26,13 +26,13 @@ const SecondSection: React.FC = () => {
 }
 
 const Section = styled.div`
-    padding: 36px;
+    padding: 48px 36px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    min-height: 600px;
 
-    height: 60vh;
 
     h1 {
         margin-top: 16px;
@@ -48,7 +48,7 @@ const Section = styled.div`
         margin: 40px 0px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 2em;
+        gap: 1em;
     }
 
     @media screen and (max-width: 1100px) {
@@ -62,4 +62,4 @@ const Section = styled.div`
     }
 `;
 
-export default SecondSection;
+export default AnythingAnywhereSection;

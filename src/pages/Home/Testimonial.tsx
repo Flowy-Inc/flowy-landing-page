@@ -9,7 +9,7 @@ const Testimonial: React.FC = () => {
             <Profile>
                 <img src={ProfileImg} alt=""/>
                 <div className="biography">
-                    <h3>Kao Apithep</h3>
+                    <h3>Aueboon Ruenekhamfu</h3>
                     <p>Senior Computer Engineering Student</p>
                 </div>
             </Profile>
@@ -26,25 +26,17 @@ const Testimonial: React.FC = () => {
 const Container = styled.div`
     padding: 16px 24px;
     border-radius: 36px;
-    border: 1px solid var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: default;
-    transition: 1s;
 
     * {
         margin: 10px 0px;
     }
 
-    :hover {
-        transform: scale(103%);
-        box-shadow: 0px 0px 40px 0px rgba(223, 70, 70, 0.1);
-        border: 1px solid var(--pale-red)
-    }
-
     @media screen and (max-width: 1100px) {
         margin-top: 40px;
+        transform: scale(0.7);
     }
 `;
 
@@ -53,7 +45,7 @@ const Profile = styled.div`
     align-items: center;
 
     img {
-        object-fit: cover;
+        object-fit: fill;
         border-radius: 360px;
         height: 100px;
     }
@@ -71,7 +63,6 @@ const Profile = styled.div`
 const Comment = styled.div`
     width: 420px;
     border-left: 3px solid var(--primary);
-    transition: .3s;
     
     p {
         margin-left: 16px;

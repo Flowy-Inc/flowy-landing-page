@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Testimonial from "./Testimonial";
 
 
-const ThirdSection: React.FC = () => {
+const TestimonialSection: React.FC = () => {
     return (
         <Section>
             <Testimonial />
@@ -20,11 +20,11 @@ const ThirdSection: React.FC = () => {
 }
 
 const Section = styled.div`
-    padding: 36px;
+    padding: 24px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 60vh;
+    min-height: 600px;
 
     h1 {
         margin-top: 16px;
@@ -39,6 +39,10 @@ const Section = styled.div`
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
+        h1 {
+            font-size: 3em;
+        }
         
         .typo {
             text-align: center;
@@ -49,4 +53,4 @@ const Section = styled.div`
     }
 `;
 
-export default ThirdSection;
+export default TestimonialSection;

@@ -4,12 +4,12 @@ import { BorderedButton } from "../../components/button/BorderedButton";
 // Global Components
 import { Button } from "../../components/button/Button";
 
-const ForthSection: React.FC = () => {
+const EndingSection: React.FC = () => {
     return (
         <Container>
             <Section>
                 <div>
-                    <h1><span>อนาคต</span>เริ่มที่ปัจจุบัน</h1>
+                    <h1>รูปแบบการทำงาน<span>ในอนาคต</span><br />เริ่มแล้วที่ปัจจุบัน</h1>
                     <p>
                         ลงทะเบียนล่วงหน้ากับเราวันนี้<br />
                         เพื่อรับสิทธิพิเศษในการใช้งานจากพวกเรา
@@ -19,7 +19,6 @@ const ForthSection: React.FC = () => {
                     <Button>สมัครเป็นผู้ให้เช่าฟรี!</Button>
                     <BorderedButton>ฉันอยากเป็นผู้เช่า</BorderedButton>
                 </div>
-                
             </Section>
             <Footer>2022 © Flowy Inc.</Footer>
         </Container>
@@ -29,8 +28,13 @@ const ForthSection: React.FC = () => {
 
 const Container = styled.div`
     background-image: url('/images/gradient-background.png');
-    background-size: 100%;
+    background-size: cover;
+    background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 440px){
+        background-position: bottom;
+    }
 `;
 
 const Section = styled.div`
@@ -39,13 +43,20 @@ const Section = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    min-height: 600px;
     
 
     h1 {
         margin-top: 16px;
         text-align: center;
+        font-size: 3em;
+
+        @media screen and (max-width: 440px){
+            font-size: 2.5em;
+        }
     }
+
+    
 
     p {
         margin-top: 10px;
@@ -59,6 +70,11 @@ const Section = styled.div`
         align-items: center;
         gap: 2em;
         width: 50%;
+        
+        @media screen and (max-width: 440px){
+            flex-direction: column;
+            width: 100%;
+        }
     }
 `;
 
@@ -71,4 +87,4 @@ const Footer = styled.div`
     color: var(--pale-black);
 `;
 
-export default ForthSection;
+export default EndingSection;

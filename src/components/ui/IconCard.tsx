@@ -48,19 +48,24 @@ const Card = styled.div`
     border-radius: 24px;
     background-color: var(--white);
     box-shadow: 0px 0px 40px 0px rgba(223, 70, 70, 0.1);
-    height: 100px;
-    cursor: default;
+    box-sizing: border-box;
 
-    display: grid;
-    grid-template-columns: auto 1fr;
+    width: 100%;
+    height: 100%;
+
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 1em;
-
-    transition: .3s;
 
     .info{
         h2 {
             margin: 0;
+            @media screen and (max-width: 440px){
+                font-size: 1.2em ;
+            }
         }
         
         p {
@@ -69,17 +74,16 @@ const Card = styled.div`
             margin: 0;
         }
     }
-
-    :hover {
-        transform: scale(105%);
-    }
 `;
 
 const IconBox = styled.div`
     background-color: var(--primary);
     border-radius: 24px;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;    
 
     color: var(--white);
     display: flex;
