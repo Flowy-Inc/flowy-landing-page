@@ -11,7 +11,7 @@ export const Navbar: React.FC = () => {
   const navigate = useNavigate();
 
 	useEffect(() => {
-		
+		minimizeMenu();
 	},[]);
 
 	function minimizeMenu() {

@@ -4,12 +4,11 @@ import styled from 'styled-components';
 
 export const VideoCard: React.FC = () => {
     const VIDEO_PATH = "https://assets.mixkit.co/videos/preview/mixkit-woman-doing-home-office-in-dining-room-4955-large.mp4";
-    // const VIDEO_PATH = "/videos/welcome.mp4";
     
     return (
         <Card>
-            <video id="background-video" autoPlay controls={false} loop muted poster={VIDEO_PATH}>
-            <source src={VIDEO_PATH} type="video/mp4" />
+            <video id="background-video" autoPlay={true} controls={false} loop muted playsInline={true} preload="metadata">
+                <source src={VIDEO_PATH} type="video/mp4" />
             </video>
         </Card>
 
