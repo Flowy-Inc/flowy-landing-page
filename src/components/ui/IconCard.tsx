@@ -48,9 +48,10 @@ const Card = styled.div`
     border-radius: 24px;
     background-color: var(--white);
     box-shadow: 0px 0px 40px 0px rgba(223, 70, 70, 0.1);
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 
-    width: 100%;
+    /* width: 100%; */
+    max-height: 100px;
     height: 100%;
 
     /* display: grid;
@@ -59,6 +60,10 @@ const Card = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 1em;
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
 
     .info{
         h2 {

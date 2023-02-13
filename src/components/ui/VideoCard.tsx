@@ -3,7 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const VideoCard: React.FC = () => {
-    const VIDEO_PATH = "https://assets.mixkit.co/videos/preview/mixkit-woman-doing-home-office-in-dining-room-4955-large.mp4";
+    // const VIDEO_PATH = "https://assets.mixkit.co/videos/preview/mixkit-woman-doing-home-office-in-dining-room-4955-large.mp4";
+    const VIDEO_PATH = "/videos/welcome.mp4";
     
     return (
         <Card>

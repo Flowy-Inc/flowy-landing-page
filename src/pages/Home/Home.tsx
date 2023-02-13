@@ -17,14 +17,15 @@ import AnythingAnywhereSection from './AnythingAnywhereSection';
 import TestimonialSection from './TestimonialSection';
 import EndingSection from './EndingSection';
 
-const VIDEO_PATH = "https://assets.mixkit.co/videos/preview/mixkit-woman-doing-home-office-in-dining-room-4955-large.mp4/";
+// const VIDEO_PATH = "https://assets.mixkit.co/videos/preview/mixkit-woman-doing-home-office-in-dining-room-4955-large.mp4/";
+const VIDEO_PATH = "/videos/welcome.mp4/";
 
 const Home: React.FC = () => {
     const [isSuccess, setIsSuccess] = useState<boolean>(false);
 
     useEffect(() => {
         try {
-            axios.get(VIDEO_PATH as string, { timeout: 5000 })
+            fetch(VIDEO_PATH as string)
             .then(() => { 
                 setTimeout(() => {
                     setIsSuccess(true)
