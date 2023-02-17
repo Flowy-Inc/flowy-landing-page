@@ -57,7 +57,7 @@ const Home: React.FC = () => {
 }
 
 const Wrapper = styled.div`
-    width: 100vw;
+    width: 100%;
 `;
 
 export default Home;
