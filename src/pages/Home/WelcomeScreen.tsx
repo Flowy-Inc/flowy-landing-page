@@ -44,7 +44,7 @@ const Content = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10em;
+    gap: 4em;
 
     .text {
         display: flex;
@@ -53,9 +53,8 @@ const Content = styled.div`
         gap: 1em;
     }
 
-    @media screen and (max-width: 1180px) {
+    @media screen and (max-width: 1200px) {
         gap: 4em;
-        
         display: flex;
         flex-direction: column;
         justify-content: center;

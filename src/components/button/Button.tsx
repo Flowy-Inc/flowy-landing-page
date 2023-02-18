@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
     background-color: ${props => props.disabled ? "#DE5858" : "#D62E2E"};
-    padding: 10px 0px;
+    padding: 12px;
     width: 100%;
     border-radius: 36px;
     border: none;
+    box-sizing: border-box;
     cursor: ${props => props.disabled ? "no-drop": "pointer"};
 
     text-align: center;

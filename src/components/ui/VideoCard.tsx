@@ -18,7 +18,6 @@ export const VideoCard: React.FC = () => {
 
 const Card = styled.div`
     box-sizing: border-box;
-    
     border-radius: 36px;
     // background
     /* background-image: url('https://images.unsplash.com/photo-1594732832278-abd644401426?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'); */
@@ -27,7 +26,7 @@ const Card = styled.div`
     /* background-position: center; */
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     video {
@@ -36,10 +35,11 @@ const Card = styled.div`
         border: none;
         border-radius: 36px;
         border: 8px solid rgba(255, 255, 255, 0.6);
-        width: 600px;
+        /* width: 600px; */
+        width: 80vw;
         height: 400px;
 
-        @media screen and (max-width: 1200px) {
+        @media screen and (min-width: 1200px) {
             width: 90%;
         }
     }
