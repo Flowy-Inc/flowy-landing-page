@@ -8,7 +8,7 @@ export default createGlobalStyle`
         display: flex;
         flex-direction: column;
 
-        /* display: block; */
+        box-sizing: border-box;
         
         margin: 0;
         padding: 0;

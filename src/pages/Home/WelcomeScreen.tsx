@@ -32,16 +32,6 @@ const Section = styled.div`
     background-position: 70% 30%;
     background-size: cover;
 
-    .text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        * {
-            margin: 10px 0px;
-        }
-    }
-
     @media screen and (max-width: 440px) {
         h1 {
             font-size: 3em;
@@ -51,13 +41,19 @@ const Section = styled.div`
 `;
 
 const Content = styled.div`
-    padding-top: clamp(3rem,1.72rem + 3vw,5rem);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10em;
 
-    @media screen and (max-width: 1200px) {
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    @media screen and (max-width: 1180px) {
         gap: 4em;
         
         display: flex;
@@ -66,10 +62,17 @@ const Content = styled.div`
         align-items: center;
 
         .text {
-            /* width: 100%; */
-            display: flex;
+            align-items: center;
             text-align: center;
         }
+    }
+
+    @media screen and (min-width: 1200px){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
     }
 `
 

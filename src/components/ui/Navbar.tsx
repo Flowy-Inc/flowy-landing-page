@@ -70,7 +70,7 @@ const Container = styled.div`
   /* background-color: rgba(0, 0, 0, 1); */
 
   img {
-    width: 120px;
+    width: 12vh;
   }
 `;
 
