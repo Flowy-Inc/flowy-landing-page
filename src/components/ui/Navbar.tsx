@@ -37,11 +37,17 @@ export const Navbar: React.FC = () => {
       </Link>
       <Content>
         {isHamburger ? (
-          <BorderedButton onClick={onLandLordSignUpClick}>เริ่มใช้งาน</BorderedButton>
+          <a href="https://flowider.netlify.app/">
+            <BorderedButton>เริ่มใช้งาน</BorderedButton>
+          </a>
         ) : (
           <>
-            <Link to="/flowitizen-signup">ฉันอยากเป็นผู้เช่า</Link>
-            <Button onClick={onLandLordSignUpClick}>สมัครเป็นผู้ให้เช่า</Button>
+            {/* <Link to="/flowitizen-signup">ฉันอยากเป็นผู้เช่า</Link> */}
+            {/* <Button onClick={onLandLordSignUpClick}>สมัครเป็นผู้ให้เช่า</Button> */}
+            <a href="https://client-flowy.netlify.app/">ฉันอยากเป็นผู้เช่า</a>
+            <a href="https://flowider.netlify.app/">
+              <Button>สมัครเป็นผู้ให้เช่า</Button>
+            </a>
           </>
         )}
       </Content>

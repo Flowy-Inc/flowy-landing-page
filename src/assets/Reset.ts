@@ -55,6 +55,7 @@ export default createGlobalStyle`
         color: var(--primary);
         font-weight: 600;
         text-align: center;
+        width: inherit;
     }
 
     input[type='number'] {

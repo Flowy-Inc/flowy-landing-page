@@ -16,8 +16,12 @@ const EndingSection: React.FC = () => {
                     </p>
                 </div>
                 <div className="call-to-action">
-                    <Button>สมัครเป็นผู้ให้เช่าฟรี!</Button>
-                    <BorderedButton>ฉันอยากเป็นผู้เช่า</BorderedButton>
+                    <a href="https://client-flowy.netlify.app/">
+                        <Button>สมัครเป็นผู้ให้เช่าฟรี!</Button>
+                    </a>
+                    <a href="https://flowider.netlify.app/">
+                        <BorderedButton>ฉันอยากเป็นผู้เช่า</BorderedButton>
+                    </a>
                 </div>
             </Section>
             <Footer>2022 © Flowy Inc.</Footer>
